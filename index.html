@@ -172,6 +172,41 @@
     .belief h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff; }
     .belief p { font-size: 0.88rem; color: rgba(255,255,255,0.7); line-height: 1.6; }
 
+    /* PARADIGMA */
+    .paradigm-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.5rem;
+    }
+    .paradigm-card {
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 1.75rem;
+    }
+    .paradigm-from {
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-decoration: line-through;
+      margin-bottom: 0.25rem;
+    }
+    .paradigm-arrow {
+      font-size: 1.2rem;
+      color: var(--brand);
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+    .paradigm-to {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+    .paradigm-card p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
     /* MODULES */
     .modules-grid {
       display: grid;
@@ -384,6 +419,7 @@
     <div class="section-label">O Próximo Passo</div>
     <h2>O software deve adaptar-se<br />ao negócio, não o contrário.</h2>
     <p class="lead">Durante décadas, as empresas foram obrigadas a aceitar implementações intermináveis e sistemas que nunca refletem totalmente a sua realidade. A FluxForge nasce para mudar isso.</p>
+    <p class="lead" style="margin-top:-1.5rem; font-style:italic; color:rgba(255,255,255,0.6);">Porque o futuro não é de quem implementa software. É de quem o faz evoluir constantemente.</p>
     <div class="beliefs">
       <div class="belief">
         <div class="belief-num">01</div>
@@ -404,6 +440,41 @@
         <div class="belief-num">04</div>
         <h3>Evolução contínua, não um projeto fechado</h3>
         <p>Software vivo que aprende, ajusta e cresce com cada cliente ao longo do tempo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARADIGMA -->
+<section>
+  <div class="container">
+    <div class="section-label">A Mudança de Paradigma</div>
+    <h2>Do modelo tradicional<br />ao software que evolui contigo.</h2>
+    <p class="lead">O modelo antigo obriga as empresas a adaptar-se ao software. A FluxForge inverte essa lógica.</p>
+    <div class="paradigm-grid">
+      <div class="paradigm-card">
+        <div class="paradigm-from">Consultores externos</div>
+        <div class="paradigm-arrow">→</div>
+        <div class="paradigm-to">Expertise integrada</div>
+        <p>Toda a implementação é feita por equipas próprias, profundamente alinhadas com o produto e o cliente. Sem fricção, sem atrasos.</p>
+      </div>
+      <div class="paradigm-card">
+        <div class="paradigm-from">Decisões por suposição</div>
+        <div class="paradigm-arrow">→</div>
+        <div class="paradigm-to">Decisões por dados reais</div>
+        <p>Trabalhamos com dados reais desde o primeiro dia, ajustando continuamente com base na utilização efetiva da operação.</p>
+      </div>
+      <div class="paradigm-card">
+        <div class="paradigm-from">Software rígido</div>
+        <div class="paradigm-arrow">→</div>
+        <div class="paradigm-to">Software adaptativo</div>
+        <p>Soluções que se ajustam à realidade operacional de cada cliente, sem obrigar a empresa a mudar os seus processos.</p>
+      </div>
+      <div class="paradigm-card">
+        <div class="paradigm-from">Projetos longos</div>
+        <div class="paradigm-arrow">→</div>
+        <div class="paradigm-to">Implementação contínua</div>
+        <p>O software entra rapidamente em operação e evolui progressivamente, gerando impacto desde os primeiros dias.</p>
       </div>
     </div>
   </div>
