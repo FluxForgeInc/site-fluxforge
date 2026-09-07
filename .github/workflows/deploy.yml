@@ -27,6 +27,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+        env:
+          WEB3FORMS_KEY: ${{ secrets.WEB3FORMS_KEY }}
       - run: npm run check
       - uses: actions/upload-pages-artifact@v3
         with:

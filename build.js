@@ -144,7 +144,21 @@ if (fs.existsSync(ASSETS_SRC)) {
 /* ------------------------------------------------------------------ */
 /* 3. Copy main.js                                                     */
 /* ------------------------------------------------------------------ */
-writeFile(path.join(PUBLIC, 'assets', 'js', 'main.js'), readFile(path.join(SRC, 'js', 'main.js')));
+// Web3Forms access key: from the CI secret (env) or a git-ignored local file; never committed.
+function web3formsKey() {
+  if (process.env.WEB3FORMS_KEY) return process.env.WEB3FORMS_KEY.trim();
+  const keyFile = path.join(ROOT, 'web3forms.key');
+  if (fs.existsSync(keyFile)) return readFile(keyFile).trim();
+  return '';
+}
+const KEY = web3formsKey();
+let mainJs = readFile(path.join(SRC, 'js', 'main.js'));
+if (!/window\.FLUXFORGE_WEB3FORMS_KEY = '';/.test(mainJs)) {
+  throw new Error('src/js/main.js must keep window.FLUXFORGE_WEB3FORMS_KEY empty; the key is injected at build time');
+}
+mainJs = mainJs.replace("window.FLUXFORGE_WEB3FORMS_KEY = '';", "window.FLUXFORGE_WEB3FORMS_KEY = '" + KEY.replace(/[^A-Za-z0-9-]/g, '') + "';");
+writeFile(path.join(PUBLIC, 'assets', 'js', 'main.js'), mainJs);
+console.log(KEY ? 'Web3Forms key injected' : 'WARNING: no Web3Forms key (WEB3FORMS_KEY env or web3forms.key file); contact form will use the mailto fallback');
 
 /* ------------------------------------------------------------------ */
 /* 4. Load partials                                                    */

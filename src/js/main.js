@@ -1,9 +1,10 @@
 // FluxForge — production site behaviour. Vanilla JS, no dependencies.
 'use strict';
 
-// Configure this to point at the API Gateway endpoint once it exists.
-// Contact form backend: Web3Forms (https://web3forms.com). Set the public access
-// key obtained for contacto@fluxforge.pt. While empty, the form falls back to a mailto: link.
+// Contact form backend: Web3Forms (https://web3forms.com).
+// The access key is NOT stored in source: build.js injects it from the WEB3FORMS_KEY
+// environment variable (GitHub Actions secret) or from a git-ignored local `web3forms.key`
+// file. While empty, the form falls back to a mailto: link.
 window.FLUXFORGE_WEB3FORMS_KEY = '';
 window.FLUXFORGE_FORM_ENDPOINT = 'https://api.web3forms.com/submit';
 
