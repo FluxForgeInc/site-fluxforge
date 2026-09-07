@@ -131,8 +131,8 @@ if (fs.existsSync(ASSETS_SRC)) {
     if (entry.isDirectory()) {
       // top-level asset folders (fonts, img) go under public/assets/<name>
       copyDir(src, path.join(PUBLIC, 'assets', entry.name));
-    } else if (['favicon.ico', 'favicon.svg', 'apple-touch-icon.png', 'og-image.png'].includes(entry.name)) {
-      // root-level generated raster images live at the site root
+    } else if (['favicon.ico', 'favicon.svg', 'apple-touch-icon.png', 'og-image.png'].includes(entry.name) || /^google[0-9a-f]+.html$/.test(entry.name)) {
+      // root-level files (favicons, OG image, Google Search Console verification file) live at the site root
       fs.copyFileSync(src, path.join(PUBLIC, entry.name));
     } else {
       // svg logos, icons.svg, favicon.svg etc. live under public/assets/
