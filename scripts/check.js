@@ -28,7 +28,7 @@ function findFiles(dir, predicate) {
   return out;
 }
 
-const findHtmlFiles = (dir) => findFiles(dir, (name) => name.endsWith('.html'));
+const findHtmlFiles = (dir) => findFiles(dir, (name) => name.endsWith('.html') && !/^google[0-9a-f]+.html$/.test(name));
 
 const files = findHtmlFiles(PUBLIC);
 console.log(`Checking ${files.length} HTML files in public/...\n`);
@@ -105,7 +105,7 @@ for (const file of files) {
 
 // (e) every PT source page has an EN counterpart and vice versa, via front matter
 function findPageFiles(dir) {
-  return findFiles(dir, (name) => name.endsWith('.html'));
+  return findFiles(dir, (name) => name.endsWith('.html') && !/^google[0-9a-f]+.html$/.test(name));
 }
 
 function parseFrontMatter(raw) {
