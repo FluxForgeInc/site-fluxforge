@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="FluxForge">
+  <rect width="32" height="32" rx="6" fill="#FFFFFF"/>
+  <g transform="translate(6, 5)">
+    <rect x="0" y="7" width="5" height="15" rx="2.5" fill="#E8714A" />
+    <rect x="7.5" y="3" width="5" height="19" rx="2.5" fill="#E8A84A" />
+    <rect x="15" y="0" width="5" height="22" rx="2.5" fill="#5B3FE4" />
+  </g>
+</svg>

@@ -1,2 +1,7 @@
+node_modules/
+public/
+.playwright-mcp/
+*.jpeg
 *.pptx
 *.ppt
+web3forms.key
