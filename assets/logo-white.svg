@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none" width="240" height="48" role="img" aria-label="FluxForge">
+  <g transform="translate(4, 8)">
+    <rect x="0" y="8" width="6" height="20" rx="3" fill="#E8714A" />
+    <rect x="9" y="3" width="6" height="28" rx="3" fill="#E8A84A" />
+    <rect x="18" y="0" width="6" height="34" rx="3" fill="#C8BFFF" />
+  </g>
+  <text x="40" y="31" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.02em" fill="#FFFFFF">FLUX<tspan fill="#C8BFFF">FORGE</tspan></text>
+</svg>

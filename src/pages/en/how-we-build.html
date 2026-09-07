@@ -1,0 +1,526 @@
+---
+title: How We Build | FluxForge — AI Engineering Methodology
+description: Diagnosis, architecture, build and operation. Discover FluxForge's engineering methodology for taking AI systems from diagnosis to production, with the code and data always on the client's side.
+path: /en/how-we-build/
+navKey: how-we-build
+breadcrumb: How We Build
+h1: We build to stay in production.
+lang: en
+alt: /como-construimos/
+---
+<div class="flex flex-col w-full">
+<!-- Top Technical Breadcrumb & Hero Stage -->
+<section class="relative w-full bg-surface-canvas overflow-hidden pb-space-96 pt-space-64 md:pt-space-96">
+<!-- Subtle architectural background vector -->
+<div class="absolute inset-0 pointer-events-none opacity-40">
+<svg class="w-full h-full text-brand-light" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="48" id="grid-pattern" patternUnits="userSpaceOnUse" width="48">
+<path d="M 48 0 L 0 0 0 48" fill="none" stroke="currentColor" stroke-width="0.75"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid-pattern)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<div class="relative max-w-layout-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Eyebrow Pill -->
+<div class="inline-flex items-center gap-space-8 px-space-16 py-space-4 rounded-full bg-brand-light text-primary-container font-label-eyebrow text-label-eyebrow uppercase tracking-widest mb-space-24 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+        How We Build
+      </div>
+<!-- Main Heading & Subtitle Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-32 items-start">
+<div class="lg:col-span-8 flex flex-col gap-space-24">
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight">
+            We build to stay in production.
+          </h1>
+<p class="font-body-large text-body-large text-on-surface-variant max-w-2xl leading-relaxed">
+            AI only creates value when it's designed inside the processes and systems the company already uses — on any stack, with any data source, and with proven reliability.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-16 pt-space-16">
+<a class="h-12 px-space-24 rounded-[6px] bg-primary-container text-on-primary font-button-text text-button-text flex items-center justify-center gap-space-8 hover:bg-brand-dark transition-all duration-150 shadow-sm" href="#diagnostico">
+<span class="">Book a Diagnosis</span>
+<svg class="icon text-[18px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-arrow_forward"></use></svg>
+</a>
+<a class="h-12 px-space-24 rounded-[6px] bg-surface-container text-primary-container font-button-text text-button-text flex items-center justify-center gap-space-8 hover:bg-brand-light transition-all duration-150" href="#fases-trabalho">
+<svg class="icon text-[18px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-timeline"></use></svg>
+<span class="">See the Work Phases</span>
+</a>
+</div>
+</div>
+<!-- Telemetry Data Capsule -->
+<div class="lg:col-span-4 flex flex-col gap-space-16 bg-surface-container-low rounded-xl p-space-24 shadow-sm">
+<div class="flex items-center justify-between pb-space-12">
+<span class="font-label-eyebrow text-label-eyebrow text-muted uppercase tracking-wider">Pipeline Status</span>
+<span class="inline-flex items-center gap-1 font-body-small text-body-small text-primary font-bold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+              99.9% Operational
+            </span>
+</div>
+<!-- Micro Architecture Diagram -->
+<div class="bg-surface-canvas rounded-lg p-space-16 flex flex-col gap-space-12 shadow-sm">
+<div class="flex items-center justify-between text-on-surface font-body-small text-body-small font-semibold">
+<span class="">Code &amp; Data Sovereignty</span>
+<span class="text-primary-container font-bold">100% Client</span>
+</div>
+<div class="w-full bg-surface-variant h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-full"></div>
+</div>
+<div class="grid grid-cols-3 gap-space-8 pt-space-8 text-center">
+<div class="bg-surface-container rounded p-space-8">
+<span class="block font-label-eyebrow text-label-eyebrow text-muted">LATENCY</span>
+<span class="font-headline-md text-headline-md text-on-surface">&lt;12ms</span>
+</div>
+<div class="bg-surface-container rounded p-space-8">
+<span class="block font-label-eyebrow text-label-eyebrow text-muted">INTEGRATION</span>
+<span class="font-headline-md text-headline-md text-on-surface">Zero Lock</span>
+</div>
+<div class="bg-surface-container rounded p-space-8">
+<span class="block font-label-eyebrow text-label-eyebrow text-muted">GDPR</span>
+<span class="font-headline-md text-headline-md text-on-surface">EU-Safe</span>
+</div>
+</div>
+</div>
+<p class="font-body-small text-body-small text-muted">
+            Architecture designed to ISO/IEC standards and European compliance, hosted on national territory.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Photo Insight Interstitial -->
+<section class="w-full bg-surface-container-lowest py-space-48">
+<div class="max-w-layout-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="relative w-full h-80 rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" src="/assets/img/placeholder-control-room.jpg" width="1408" height="768" alt="Technical control room with workstations and monitors displaying AI pipeline telemetry" loading="lazy">
+<div class="absolute inset-0 bg-gradient-to-r from-on-surface/90 via-on-surface/50 to-transparent flex items-center p-space-48">
+<div class="max-w-md flex flex-col gap-space-12 text-on-primary">
+<span class="font-label-eyebrow text-label-eyebrow tracking-widest uppercase text-primary-fixed-dim">Methodological Rigour</span>
+<p class="font-headline-md text-headline-md font-bold leading-snug">
+              No decorative prototypes. Only software tested under real business pressure.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- As 4 Convicções de Engenharia -->
+<section class="w-full bg-surface-canvas py-space-96">
+<div class="max-w-layout-max-width mx-auto px-margin-mobile md:px-margin-desktop flex flex-col gap-space-64">
+<!-- Section Header -->
+<div class="flex flex-col gap-space-12 max-w-2xl">
+<span class="font-label-eyebrow text-label-eyebrow text-primary-container tracking-widest uppercase font-bold">
+          Engineering Principles
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Four convictions that guide every line of code
+        </h2>
+<p class="font-body-base text-body-base text-on-surface-variant">
+          We don't build on fleeting enthusiasm. We operate with industrial discipline to guarantee longevity, precision and autonomy for your business.
+        </p>
+</div>
+<!-- 4 Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-24">
+<!-- Card 01 -->
+<div class="bg-surface-container-lowest p-space-32 rounded-xl flex flex-col justify-between gap-space-24 shadow-sm hover:shadow-md transition-shadow duration-200">
+<div class="flex items-center justify-between">
+<span class="font-headline-metric text-headline-metric text-brand-light font-extrabold select-none">01</span>
+<div class="w-12 h-12 rounded-lg bg-brand-light flex items-center justify-center text-primary-container">
+<svg class="icon text-[24px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-troubleshoot"></use></svg>
+</div>
+</div>
+<div class="flex flex-col gap-space-12">
+<h3 class="font-headline-md text-headline-md text-on-surface">
+              Start from the friction, not the features
+            </h3>
+<p class="font-body-base text-body-base text-on-surface-variant leading-relaxed">
+              We don't invent problems to use new models. We map real costs, delays and operational bottlenecks before designing architectures. If a solution doesn't remove tangible operational friction, we don't build it.
+            </p>
+</div>
+<div class="pt-space-12 flex items-center gap-space-8 text-primary font-body-small text-body-small font-semibold">
+<svg class="icon text-[18px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-verified"></use></svg>
+<span class="">Bottleneck mapping in factory or transactional environments</span>
+</div>
+</div>
+<!-- Card 02 -->
+<div class="bg-surface-container-lowest p-space-32 rounded-xl flex flex-col justify-between gap-space-24 shadow-sm hover:shadow-md transition-shadow duration-200">
+<div class="flex items-center justify-between">
+<span class="font-headline-metric text-headline-metric text-brand-light font-extrabold select-none">02</span>
+<div class="w-12 h-12 rounded-lg bg-brand-light flex items-center justify-center text-primary-container">
+<svg class="icon text-[24px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-monitoring"></use></svg>
+</div>
+</div>
+<div class="flex flex-col gap-space-12">
+<h3 class="font-headline-md text-headline-md text-on-surface">
+              Measure impact from day one
+            </h3>
+<p class="font-body-base text-body-base text-on-surface-variant leading-relaxed">
+              We define operational and financial KPIs (OEE, hours saved, stock levels, ROI) before development starts, to validate every delivery. Every software component must justify its computational cost with measurable return.
+            </p>
+</div>
+<div class="pt-space-12 flex items-center gap-space-8 text-primary font-body-small text-body-small font-semibold">
+<svg class="icon text-[18px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-verified"></use></svg>
+<span class="">Quantitative baselines established at kick-off</span>
+</div>
+</div>
+<!-- Card 03 -->
+<div class="bg-surface-container-lowest p-space-32 rounded-xl flex flex-col justify-between gap-space-24 shadow-sm hover:shadow-md transition-shadow duration-200">
+<div class="flex items-center justify-between">
+<span class="font-headline-metric text-headline-metric text-brand-light font-extrabold select-none">03</span>
+<div class="w-12 h-12 rounded-lg bg-brand-light flex items-center justify-center text-primary-container">
+<svg class="icon text-[24px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-hub"></use></svg>
+</div>
+</div>
+<div class="flex flex-col gap-space-12">
+<h3 class="font-headline-md text-headline-md text-on-surface">
+              Integrate, don't replace
+            </h3>
+<p class="font-body-base text-body-base text-on-surface-variant leading-relaxed">We build on top of any existing ecosystem — ERPs, critical legacy systems, relational or vector databases, message queues and APIs. No rigid silos, no proprietary dependencies, and no need to rewrite software.</p>
+</div>
+<div class="pt-space-12 flex items-center gap-space-8 text-primary font-body-small text-body-small font-semibold"><svg class="icon text-[18px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-verified"></use></svg><span class="">Native integration with any software, legacy system, database or pipeline</span></div>
+</div>
+<!-- Card 04 -->
+<div class="bg-surface-container-lowest p-space-32 rounded-xl flex flex-col justify-between gap-space-24 shadow-sm hover:shadow-md transition-shadow duration-200">
+<div class="flex items-center justify-between">
+<span class="font-headline-metric text-headline-metric text-brand-light font-extrabold select-none">04</span>
+<div class="w-12 h-12 rounded-lg bg-brand-light flex items-center justify-center text-primary-container">
+<svg class="icon text-[24px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-shield"></use></svg>
+</div>
+</div>
+<div class="flex flex-col gap-space-12">
+<h3 class="font-headline-md text-headline-md text-on-surface">
+              Hand over total sovereignty to the client
+            </h3>
+<p class="font-body-base text-body-base text-on-surface-variant leading-relaxed">
+              The code, the data, the weights and the infrastructure belong 100% to your company. We leave technical capability installed and documented so your in-house team can take the helm with full autonomy.
+            </p>
+</div>
+<div class="pt-space-12 flex items-center gap-space-8 text-primary font-body-small text-body-small font-semibold">
+<svg class="icon text-[18px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-verified"></use></svg>
+<span class="">Zero technical lock-in or hidden royalties</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- O Nosso Método: As 4 Fases de Implementação -->
+<section class="w-full bg-surface-container-low py-space-96 scroll-mt-20" id="fases-trabalho">
+<div class="max-w-layout-max-width mx-auto px-margin-mobile md:px-margin-desktop flex flex-col gap-space-64">
+<div class="flex flex-col gap-space-12 max-w-2xl">
+<span class="font-label-eyebrow text-label-eyebrow text-primary-container tracking-widest uppercase font-bold">
+          Engineering Methodology
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Our Method: 4 Implementation Phases
+        </h2>
+<p class="font-body-base text-body-base text-on-surface-variant">
+          A predictable, transparent technical track, focused on auditable results at every delivery cycle.
+        </p>
+</div>
+<!-- Linear Process Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-space-24 relative">
+<!-- Step 1 -->
+<div class="bg-surface-canvas p-space-32 rounded-xl flex flex-col justify-between gap-space-20 shadow-sm relative group hover:bg-surface-bright transition-all">
+<div class="flex flex-col gap-space-16">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-primary-container text-on-primary font-bold text-body-small">
+                1
+              </span>
+<span class="font-label-eyebrow text-label-eyebrow text-primary font-bold uppercase tracking-wider bg-brand-light px-space-8 py-1 rounded">
+                Weeks 1–2
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+              Frame &amp; Diagnose
+            </h3>
+<p class="font-body-small text-body-small text-on-surface-variant leading-relaxed">
+              Immersion in the field, active listening with leadership and operators, rigorous mapping of information flows and early calculation of estimated return on investment.
+            </p>
+</div>
+<div class="flex flex-col gap-space-8 pt-space-16 bg-surface-container-lowest p-space-12 rounded-lg">
+<span class="font-label-eyebrow text-label-eyebrow text-muted uppercase">Key Outcome</span>
+<span class="font-body-small text-body-small text-on-surface font-semibold">Diagnostic Report &amp; ROI Model</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-canvas p-space-32 rounded-xl flex flex-col justify-between gap-space-20 shadow-sm relative group hover:bg-surface-bright transition-all">
+<div class="flex flex-col gap-space-16">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-primary-container text-on-primary font-bold text-body-small">
+                2
+              </span>
+<span class="font-label-eyebrow text-label-eyebrow text-primary font-bold uppercase tracking-wider bg-brand-light px-space-8 py-1 rounded">
+                Weeks 2–4
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+              Architect &amp; Technical Design
+            </h3>
+<p class="font-body-small text-body-small text-on-surface-variant leading-relaxed">
+              Detailed specification of the software architecture and data connectors, careful choice between frontier and open-source models, and strict data modelling.
+            </p>
+</div>
+<div class="flex flex-col gap-space-8 pt-space-16 bg-surface-container-lowest p-space-12 rounded-lg">
+<span class="font-label-eyebrow text-label-eyebrow text-muted uppercase">Key Outcome</span>
+<span class="font-body-small text-body-small text-on-surface font-semibold">Architecture Blueprint &amp; API Schemas</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-canvas p-space-32 rounded-xl flex flex-col justify-between gap-space-20 shadow-sm relative group hover:bg-surface-bright transition-all">
+<div class="flex flex-col gap-space-16">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-primary-container text-on-primary font-bold text-body-small">
+                3
+              </span>
+<span class="font-label-eyebrow text-label-eyebrow text-primary font-bold uppercase tracking-wider bg-brand-light px-space-8 py-1 rounded">
+                Weeks 4–10
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+              Integrate &amp; Agile Build
+            </h3>
+<p class="font-body-small text-body-small text-on-surface-variant leading-relaxed">
+              Development of bespoke software, training and fine-tuning of specific models, continuous integration (CI/CD) pipelines, and extreme operational stress testing.
+            </p>
+</div>
+<div class="flex flex-col gap-space-8 pt-space-16 bg-surface-container-lowest p-space-12 rounded-lg">
+<span class="font-label-eyebrow text-label-eyebrow text-muted uppercase">Key Outcome</span>
+<span class="font-body-small text-body-small text-on-surface font-semibold">Production Pipelines &amp; Validated Models</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-canvas p-space-32 rounded-xl flex flex-col justify-between gap-space-20 shadow-sm relative group hover:bg-surface-bright transition-all">
+<div class="flex flex-col gap-space-16">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-primary-container text-on-primary font-bold text-body-small">
+                4
+              </span>
+<span class="font-label-eyebrow text-label-eyebrow text-primary font-bold uppercase tracking-wider bg-brand-light px-space-8 py-1 rounded">
+                Ongoing
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+              Prove &amp; Run Continuously
+            </h3>
+<p class="font-body-small text-body-small text-on-surface-variant leading-relaxed">
+              Safe rollout onto your infrastructure, real-time accuracy monitoring, hands-on intensive training, and systematic tracking of return metrics.
+            </p>
+</div>
+<div class="flex flex-col gap-space-8 pt-space-16 bg-surface-container-lowest p-space-12 rounded-lg">
+<span class="font-label-eyebrow text-label-eyebrow text-muted uppercase">Key Outcome</span>
+<span class="font-body-small text-body-small text-on-surface font-semibold">Live Dashboards &amp; Autonomous Operation</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- O que entregamos (Entregáveis tangíveis e concretos) -->
+<section class="w-full bg-surface-canvas py-space-96">
+<div class="max-w-layout-max-width mx-auto px-margin-mobile md:px-margin-desktop flex flex-col gap-space-64">
+<div class="flex flex-col gap-space-12 max-w-2xl">
+<span class="font-label-eyebrow text-label-eyebrow text-primary-container tracking-widest uppercase font-bold">
+          Deliverables
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          What stays with your company
+        </h2>
+<p class="font-body-base text-body-base text-on-surface-variant">
+          No black boxes, no abstract promises. We deliver proprietary, secure digital assets, fully integrated into your operational estate.
+        </p>
+</div>
+<!-- Bento-style Deliverables Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-24">
+<!-- Item 1 -->
+<div class="lg:col-span-6 bg-surface-container-low p-space-40 rounded-xl flex flex-col gap-space-20 justify-between shadow-sm">
+<div class="flex flex-col gap-space-16">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<svg class="icon text-[24px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-smart_toy"></use></svg>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+              Agents and models in active production
+            </h3>
+<p class="font-body-base text-body-base text-on-surface-variant leading-relaxed">Autonomous agents configured to handle real workflows — intelligent document processing, computer-vision inspection or forecasting operational deviations — integrated directly into the software already in use and operating with high fault tolerance.</p>
+</div>
+<ul class="flex flex-col gap-space-8 text-body-small font-body-small text-on-surface-variant"><li class="flex items-center gap-space-8"><svg class="icon text-primary text-[18px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-check_circle"></use></svg><span class="">Direct compatibility with any operational software and enterprise stack</span></li><li class="flex items-center gap-space-8"><svg class="icon text-primary text-[18px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-check_circle"></use></svg><span class="">Fine-tuned models with strict guardrails against hallucinations and drift</span></li></ul>
+</div>
+<!-- Item 2 -->
+<div class="lg:col-span-6 bg-surface-container-low p-space-40 rounded-xl flex flex-col gap-space-20 justify-between shadow-sm">
+<div class="flex flex-col gap-space-16">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<svg class="icon text-[24px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-database"></use></svg>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+              Databases, pipelines and bespoke software
+            </h3>
+<p class="font-body-base text-body-base text-on-surface-variant leading-relaxed">
+              Robust ingestion and ETL structures, relational and vector database connectors, and support software fully documented in a secure repository that you own.
+            </p>
+</div>
+<ul class="flex flex-col gap-space-8 text-body-small font-body-small text-on-surface-variant">
+<li class="flex items-center gap-space-8">
+<svg class="icon text-primary text-[18px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-check_circle"></use></svg>
+<span class="">Automated data cleansing and indexing pipelines</span>
+</li>
+<li class="flex items-center gap-space-8">
+<svg class="icon text-primary text-[18px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-check_circle"></use></svg>
+<span class="">Modular APIs with OpenAPI / Swagger documentation</span>
+</li>
+</ul>
+</div>
+<!-- Item 3 -->
+<div class="lg:col-span-6 bg-surface-container-low p-space-40 rounded-xl flex flex-col gap-space-20 justify-between shadow-sm">
+<div class="flex flex-col gap-space-16">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<svg class="icon text-[24px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-speed"></use></svg>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+              Operational dashboards and telemetry
+            </h3>
+<p class="font-body-base text-body-base text-on-surface-variant leading-relaxed">
+              Real-time control panels that audit algorithm accuracy, computational resource consumption, and the ongoing evolution of the financial metrics defined during diagnosis.
+            </p>
+</div>
+<ul class="flex flex-col gap-space-8 text-body-small font-body-small text-on-surface-variant">
+<li class="flex items-center gap-space-8">
+<svg class="icon text-primary text-[18px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-check_circle"></use></svg>
+<span class="">Real-time tracing of latency and token consumption</span>
+</li>
+<li class="flex items-center gap-space-8">
+<svg class="icon text-primary text-[18px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-check_circle"></use></svg>
+<span class="">Immediate alerts for incidents or statistical deviations</span>
+</li>
+</ul>
+</div>
+<!-- Item 4 -->
+<div class="lg:col-span-6 bg-surface-container-low p-space-40 rounded-xl flex flex-col gap-space-20 justify-between shadow-sm">
+<div class="flex flex-col gap-space-16">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<svg class="icon text-[24px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-school"></use></svg>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+              Technical documentation &amp; hands-on training
+            </h3>
+<p class="font-body-base text-body-base text-on-surface-variant leading-relaxed">
+              Clear operating manuals, architecture handbooks for your IT team, and on-site technical training sessions to make sure the company doesn't depend on FluxForge for day-to-day operation.
+            </p>
+</div>
+<ul class="flex flex-col gap-space-8 text-body-small font-body-small text-on-surface-variant">
+<li class="flex items-center gap-space-8">
+<svg class="icon text-primary text-[18px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-check_circle"></use></svg>
+<span class="">Knowledge-transfer workshops with our engineers</span>
+</li>
+<li class="flex items-center gap-space-8">
+<svg class="icon text-primary text-[18px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-check_circle"></use></svg>
+<span class="">Preventive maintenance and continuous-evolution guide</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Padrões de Robustez & Arquitetura (Garantias Técnicas) -->
+<section class="w-full bg-surface-container py-space-96">
+<div class="max-w-layout-max-width mx-auto px-margin-mobile md:px-margin-desktop flex flex-col gap-space-48">
+<div class="flex flex-col items-center text-center gap-space-12 max-w-2xl mx-auto">
+<span class="font-label-eyebrow text-label-eyebrow text-primary-container tracking-widest uppercase font-bold">
+          Robustness &amp; Architecture Standards
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Industrial-grade technical guarantees
+        </h2>
+<p class="font-body-base text-body-base text-on-surface-variant">Proven operation on any infrastructure, software stack and regulatory requirement the client has.</p>
+</div>
+<!-- Technical Guarantees 4-Column Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-24">
+<div class="bg-surface-canvas p-space-32 rounded-xl flex flex-col gap-space-16 shadow-sm">
+<div class="w-10 h-10 rounded bg-brand-light flex items-center justify-center text-primary">
+<svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-dns"></use></svg>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface">High Availability</span>
+<p class="font-body-small text-body-small text-on-surface-variant leading-relaxed">
+            Resilient multi-zone architecture built for 99.9% uptime, with automated failover mechanisms and scalability under load.
+          </p>
+</div>
+<div class="bg-surface-canvas p-space-32 rounded-xl flex flex-col gap-space-16 shadow-sm">
+<div class="w-10 h-10 rounded bg-brand-light flex items-center justify-center text-primary">
+<svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-bolt"></use></svg>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface">Low Latency</span>
+<p class="font-body-small text-body-small text-on-surface-variant leading-relaxed">
+            Ultra-fast processing with real-time streaming, optimised caching and sub-second inference for critical shop-floor applications.
+          </p>
+</div>
+<div class="bg-surface-canvas p-space-32 rounded-xl flex flex-col gap-space-16 shadow-sm">
+<div class="w-10 h-10 rounded bg-brand-light flex items-center justify-center text-primary">
+<svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-gavel"></use></svg>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface">Security &amp; GDPR</span>
+<p class="font-body-small text-body-small text-on-surface-variant leading-relaxed">
+            Absolute compliance with European regulation. End-to-end encryption and full on-premise or EU-cloud hosting options.
+          </p>
+</div>
+<div class="bg-surface-canvas p-space-32 rounded-xl flex flex-col gap-space-16 shadow-sm">
+<div class="w-10 h-10 rounded bg-brand-light flex items-center justify-center text-primary">
+<svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-lock_open_right"></use></svg>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface">Zero Lock-In</span>
+<p class="font-body-small text-body-small text-on-surface-variant leading-relaxed">Open formats and infrastructure-agnostic modular architecture: we run seamlessly on your cloud, on-premise servers or any existing software stack, with no punitive contracts.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Secondary Context Photo Strip -->
+<section class="w-full bg-surface-canvas py-space-64">
+<div class="max-w-layout-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-24">
+<div class="relative h-64 rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" src="/assets/img/placeholder-server-rack.jpg" width="1408" height="768" alt="Enterprise server racks with organised fibre-optic cabling" loading="lazy">
+<div class="absolute bottom-0 inset-x-0 p-space-16 bg-gradient-to-t from-on-surface/90 to-transparent">
+<span class="font-body-small text-body-small text-surface-canvas font-semibold">On-Premise &amp; EU Cloud Infrastructure</span>
+</div>
+</div>
+<div class="relative h-64 rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" src="/assets/img/placeholder-engineer-screen.jpg" width="1408" height="768" alt="Software engineer analysing an AI model's loss curves on a high-resolution screen" loading="lazy">
+<div class="absolute bottom-0 inset-x-0 p-space-16 bg-gradient-to-t from-on-surface/90 to-transparent">
+<span class="font-body-small text-body-small text-surface-canvas font-semibold">Continuous Technical Oversight</span>
+</div>
+</div>
+<div class="relative h-64 rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" src="/assets/img/placeholder-board-review.jpg" width="1408" height="768" alt="Executive review meeting with analysis dashboards in a glass boardroom" loading="lazy">
+<div class="absolute bottom-0 inset-x-0 p-space-16 bg-gradient-to-t from-on-surface/90 to-transparent">
+<span class="font-body-small text-body-small text-surface-canvas font-semibold">Direct Validation with Leadership</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pre-Footer CTA Dark Block (#1A1A2E) -->
+<section class="w-full bg-on-surface text-inverse-on-surface py-space-96 scroll-mt-20" id="diagnostico">
+<div class="max-w-layout-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="bg-inverse-surface rounded-2xl p-space-48 md:p-space-64 flex flex-col lg:flex-row items-center justify-between gap-space-48 shadow-xl">
+<div class="flex flex-col gap-space-20 max-w-2xl">
+<div class="inline-flex items-center gap-space-8 px-space-16 py-space-4 rounded-full bg-brand-dark text-primary-fixed-dim font-label-eyebrow text-label-eyebrow uppercase tracking-widest self-start">
+            Operational Diagnosis
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-surface-canvas tracking-tight leading-tight">
+            Your processes already hold the value. Let's connect them to AI.
+          </h2>
+<p class="font-body-large text-body-large text-surface-variant leading-relaxed">
+            Book a 45-minute preliminary technical session with our senior engineers. We assess the viability of your data and present an ROI model before any commitment.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-16 shrink-0 w-full lg:w-auto">
+<a class="h-14 px-space-32 rounded-[6px] bg-primary-container text-on-primary font-button-text text-button-text flex items-center justify-center gap-space-12 hover:bg-brand-dark transition-colors duration-150 shadow-md" href="/en/contact/">
+<span class="">Talk to Us</span>
+<svg class="icon text-[20px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-arrow_forward"></use></svg>
+</a>
+<a class="h-14 px-space-24 rounded-[6px] bg-translucent-card text-surface-canvas font-button-text text-button-text flex items-center justify-center gap-space-8 hover:bg-white/20 transition-colors duration-150" href="mailto:contacto@fluxforge.pt">
+<svg class="icon text-[20px]" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#i-mail"></use></svg>
+<span class="">contacto@fluxforge.pt</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div>

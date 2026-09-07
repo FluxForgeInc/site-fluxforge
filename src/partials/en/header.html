@@ -1,0 +1,41 @@
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface-canvas/90 backdrop-blur-md border-b border-border-subtle">
+  <div class="max-w-layout-max-width mx-auto px-margin-mobile md:px-margin-desktop h-20 flex items-center justify-between gap-space-24">
+    <div class="flex items-center gap-space-12 shrink-0">
+      <a class="flex items-center gap-space-12" href="/en/">
+        <img alt="FluxForge" class="h-8 w-auto object-contain" src="/assets/logo.svg" width="160" height="32">
+      </a>
+    </div>
+    <nav class="hidden lg:flex items-center gap-space-32" aria-label="Main navigation">
+      <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" data-path="what-we-solve" href="/en/what-we-solve/">What We Solve</a>
+      <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" data-path="how-we-build" href="/en/how-we-build/">How We Build</a>
+      <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" data-path="how-we-partner" href="/en/how-we-partner/">How We Partner</a>
+      <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" data-path="why-us" href="/en/why-us/">Why Us</a>
+    </nav>
+    <div class="hidden lg:flex items-center gap-space-16 shrink-0">
+      <div class="flex items-center gap-1 text-body-small font-body-small text-on-surface-variant">
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="{{ALT_PATH}}" hreflang="pt-PT" lang="pt">PT</a>
+        <span class="mx-space-4 text-outline-variant" aria-hidden="true">|</span>
+        <span class="font-bold text-on-surface" lang="en" aria-current="true">EN</span>
+      </div>
+      <a class="h-12 px-space-24 rounded-[6px] bg-primary-container text-on-primary font-button-text text-button-text flex items-center justify-center hover:bg-brand-dark transition-colors duration-150" data-path="talk-to-us" href="/en/contact/">Talk to Us</a>
+    </div>
+    <button type="button" id="mobile-menu-toggle" class="lg:hidden flex items-center justify-center w-11 h-11 -mr-2 rounded-[6px] text-on-surface hover:bg-surface-container-low transition-colors" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+      <svg class="icon text-[26px]" aria-hidden="true" focusable="false" data-icon-open><use href="/assets/icons.svg#i-menu"></use></svg>
+      <svg class="icon text-[26px] hidden" aria-hidden="true" focusable="false" data-icon-close><use href="/assets/icons.svg#i-close"></use></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="lg:hidden hidden border-t border-border-subtle bg-surface-canvas">
+    <nav class="flex flex-col px-margin-mobile py-space-24 gap-space-8" aria-label="Mobile navigation">
+      <a class="nav-link-mobile font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors py-space-12" data-path="what-we-solve" href="/en/what-we-solve/">What We Solve</a>
+      <a class="nav-link-mobile font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors py-space-12" data-path="how-we-build" href="/en/how-we-build/">How We Build</a>
+      <a class="nav-link-mobile font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors py-space-12" data-path="how-we-partner" href="/en/how-we-partner/">How We Partner</a>
+      <a class="nav-link-mobile font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors py-space-12" data-path="why-us" href="/en/why-us/">Why Us</a>
+      <a class="h-12 px-space-24 rounded-[6px] bg-primary-container text-on-primary font-button-text text-button-text flex items-center justify-center hover:bg-brand-dark transition-colors duration-150 mt-space-12" data-path="talk-to-us" href="/en/contact/">Talk to Us</a>
+      <div class="flex items-center gap-2 text-body-small font-body-small text-on-surface-variant pt-space-16">
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="{{ALT_PATH}}" hreflang="pt-PT" lang="pt">PT</a>
+        <span class="mx-space-4 text-outline-variant" aria-hidden="true">|</span>
+        <span class="font-bold text-on-surface" lang="en" aria-current="true">EN</span>
+      </div>
+    </nav>
+  </div>
+</header>
